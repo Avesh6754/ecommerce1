@@ -55,7 +55,7 @@ A new Flutter project.
   </p>
 <hr>
 <hr>
-<h1 align="center">Task 6</h1>
+<h1 align="center">Task 7</h1>
 <p align ="center">
   
   <img src="https://github.com/Avesh6754/ecommerce1/assets/149478146/5a704eab-195f-4106-b880-5ac92915974a" width="22%" Height="35%">
