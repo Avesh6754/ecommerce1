@@ -29,11 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
 
       child: Scaffold(
-        backgroundColor: Color(0xff48416A),
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          title:const  Text('Gredient Button ',style: TextStyle(color: Colors.white),),
+          title:const  Text('Dark Shadow Button ',style: TextStyle(color: Colors.white),),
           centerTitle: true,
-          backgroundColor: Color(0xff48416A),
+          backgroundColor: Colors.red,
           leading:const Icon(Icons.menu,color: Colors.white,),
           actions:const  [Padding(padding:EdgeInsets.only(right: 20),
             child: Icon(Icons.search,color: Colors.white,),
@@ -50,19 +50,18 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 65,
               width: 220,
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                       Color(0xff873ABB),
-                      Color(0xff615CD0),
-                      Color(0xff298EEE),
-                    ]
-                  ),
-                  border: Border.all(color: Colors.white,width: 1),
-                  borderRadius: BorderRadius.all(Radius.circular(50)),
-                  
+                  color: Colors.black,
+                  border: Border.all(color: Colors.red,width: 1),
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  boxShadow:const [BoxShadow(
+                    color: Colors.red,
+                    offset: Offset(1,2),
+                    spreadRadius:2,
+                    blurRadius: 22,
+                  )]
               ),
               alignment: Alignment.center,
-              child: const Text('Flutter',style: TextStyle(
+              child: const Text('Tap',style: TextStyle(
                   fontSize: 25,
                   color: Colors.white,
                   fontWeight: FontWeight.bold
