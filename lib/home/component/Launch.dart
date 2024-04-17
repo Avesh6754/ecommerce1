@@ -31,9 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          title: Text('Dark Shadow Button ',style: TextStyle(color: Colors.white),),
+          title: Text('Launch Button',style: TextStyle(color: Colors.white),),
           centerTitle: true,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.green,
           leading:const Icon(Icons.menu,color: Colors.white,),
           actions:const  [Padding(padding:EdgeInsets.only(right: 20),
             child: Icon(Icons.search,color: Colors.white,),
@@ -47,23 +47,23 @@ class _HomeScreenState extends State<HomeScreen> {
               print("Hello World");
             },
             child: Container(
-              height: 65,
+              height: 220,
               width: 220,
               decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.red,width: 1),
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: Colors.black,
+                  border: Border.all(color: Colors.white,width: 1),
+                  shape: BoxShape.circle,
                   boxShadow:const [BoxShadow(
-                    color: Color(0xff009688),
-                    offset: Offset(1,2),
-                    spreadRadius:2,
+                    color: Color(0xff0D7309),
+                    offset: Offset(0,0),
+                    spreadRadius: 12,
                     blurRadius: 22,
                   )]
               ),
               alignment: Alignment.center,
-              child: const Text('Tap',style: TextStyle(
-                  fontSize: 25,
-                  color: Colors.black,
+              child: const Text('GO',style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.white,
                   fontWeight: FontWeight.bold
 
               ),),

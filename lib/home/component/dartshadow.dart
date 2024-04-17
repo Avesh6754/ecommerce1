@@ -29,11 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
 
       child: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Dark Shadow Button ',style: TextStyle(color: Colors.white),),
           centerTitle: true,
-          backgroundColor: Colors.red,
+          backgroundColor: Color(0xff009688),
           leading:const Icon(Icons.menu,color: Colors.white,),
           actions:const  [Padding(padding:EdgeInsets.only(right: 20),
             child: Icon(Icons.search,color: Colors.white,),
@@ -47,11 +47,11 @@ class _HomeScreenState extends State<HomeScreen> {
               print("Hello World");
             },
             child: Container(
-              height: 65,
-              width: 220,
+              height: 80,
+              width: 200,
               decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(color: Colors.red,width: 1),
+                  border: Border.all(color: Color(0xff009688),width: 1),
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                   boxShadow:const [BoxShadow(
                     color: Color(0xff009688),
